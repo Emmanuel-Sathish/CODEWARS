@@ -15,3 +15,8 @@ function accum(s) {
  
   
 }
+/// SIMPLIFIED CODE///
+s.split("").map((value,index)=>{
+console.log(value,index)
+return value.toUpperCase() + value.toLocaleLowerCase().repeat(index)
+}).join("-")
