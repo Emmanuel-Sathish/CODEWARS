@@ -6,7 +6,7 @@ function accum(s) {
   for(let i = 0;i<s.length; i++){
 
     let slicee = s.slice(i,i+1)
-    let repeater = slicee.repeat(i+1)
+    let repeater = slicee.repeat(i+1).toLocaleLowerCase()
     let newer = repeater.replace(`${repeater[0]}`,`${repeater[0]}`.toUpperCase())
     result.push(newer)
   }
