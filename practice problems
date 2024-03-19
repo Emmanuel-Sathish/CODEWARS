@@ -1,0 +1,17 @@
+/// accum("abcd") -> "A-Bb-Ccc-Dddd" // KYU 7
+let s = "abcd";
+function accum(s) {
+	// your code
+  let result = [];
+  for(let i = 0;i<s.length; i++){
+
+    let slicee = s.slice(i,i+1)
+    let repeater = slicee.repeat(i+1)
+    let newer = repeater.replace(`${repeater[0]}`,`${repeater[0]}`.toUpperCase())
+    result.push(newer)
+  }
+
+ let Join =  result.join("-")
+ 
+  
+}
